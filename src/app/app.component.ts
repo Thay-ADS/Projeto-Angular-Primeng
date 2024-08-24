@@ -29,29 +29,7 @@ export class AppComponent {
 
   ngOnInit() {
     
-    this.data={
-      labels:['Jan','Feb','Mar','Apr',"May",'Jun','July','Aug', 'Sept','Oct', 'Nov','Dec'],
-      datasets:[{
-        
-        borderColor:['#e2725b'],
-      
-        label:"Plan",
-        type:"line",
-        
-        backgroundColor:['#e2725b'],
-        data:[500,550,500,550,600,650,700,750,800,850,900,600]
-
-      },
-      {
-        label:"Groth actual",
-        backgroundColor:['#ff007f'],
-        data:[600,680,660,665,700,610,810,760,690,850, 800, 755]
-
-      }
-
-      ]
-      
-    };
+   
    
     this.options={
       plugins:{

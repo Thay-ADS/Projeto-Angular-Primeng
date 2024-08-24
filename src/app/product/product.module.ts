@@ -5,8 +5,12 @@ import { HttpClient } from '@angular/common/http';
 import {HttpClientModule} from '@angular/common/http';
 
 import { TableModule } from 'primeng/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
+import { AddEditProductModule } from './add-edit-product/add-edit-product.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +23,12 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     HttpClientModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    AddEditProductModule,
+    FormsModule
+   
   ],
   exports:[
     ProductComponent

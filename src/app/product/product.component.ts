@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from './product.service';
 import { Product } from './product';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -8,6 +9,8 @@ import { Product } from './product';
 })
 export class ProductComponent {
   products:Product[]=[];
+  
+  displayAddModal=false;
   constructor(private productService:ProductService){
 
   }
@@ -22,5 +25,8 @@ export class ProductComponent {
       }
     )
 
+  }
+  showAddModal(){
+      this.displayAddModal=true;
   }
 }

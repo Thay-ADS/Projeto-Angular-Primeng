@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from './product';
+import { FormsModule } from '@angular/forms';
+
 
 @Injectable({
   providedIn: 'root'

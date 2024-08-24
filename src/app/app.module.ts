@@ -19,6 +19,8 @@ import { SplitterModule } from 'primeng/splitter';
 import { PaginatorModule } from 'primeng/paginator';
 import {ProductModule} from './product/product.module';
 import { TableModule } from 'primeng/table';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { TableModule } from 'primeng/table';
     SplitterModule,
     PaginatorModule,
     ProductModule,
-    TableModule
+    TableModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
