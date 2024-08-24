@@ -1,0 +1,19 @@
+<p-table [value]="products" [paginator]='true' [rows]='5'[tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            
+            <th>Name</th>
+            <th>Description</th>
+            
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            
+            
+        </tr>
+    </ng-template>
+</p-table>
