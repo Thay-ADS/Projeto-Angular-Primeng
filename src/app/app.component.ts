@@ -35,7 +35,6 @@ export class AppComponent {
       plugins:{
         title:{
           display:true,
-          posix:screenLeft,
           text:"Unique visitor graph"
         }
       },
