@@ -9,15 +9,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./add-edit-product.component.css']
 })
 export class AddEditProductComponent {
-  name: string = 'Jeremaias';
-  description: string = 'Pedreiro';
+  name: string = '';
+  description: string = '';
   constructor(private http: HttpClient) {}
   
   @Input() displayAddModal=false;
   onSubmit(form: NgForm) {
     if(form.valid) {
-      const newData = { name: 'Jeremaias', description: 'Pedreiro' };
-      this.http.post<any>('https://3.128.249.166:8000/api/itens/', newData).subscribe((response) => {
+      const dados = { name: this.name, description: this.description };
+      this.http.post<any>('https://3.128.249.166:8000/api/itens/', dados).subscribe((response) => {
         console.log(response);
         this.displayAddModal = false
     }

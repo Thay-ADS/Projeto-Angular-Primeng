@@ -14,7 +14,9 @@
     </ng-template>
     <ng-template pTemplate="body" let-product>
         <tr>
-            <td>{{ product.name }}</td>
+            <td>
+                <a href="#" (click)="deletarProduto($event, product.id)">{{ product.name}}</a>
+            </td>
             <td>{{ product.description }}</td>
             
             
