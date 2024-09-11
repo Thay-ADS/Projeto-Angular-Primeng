@@ -17,7 +17,7 @@ export class AddEditProductComponent {
   onSubmit(form: NgForm) {
     if(form.valid) {
       const dados = { name: this.name, description: this.description };
-      this.http.post<any>('https://3.128.249.166:8000/api/itens/', dados).subscribe((response) => {
+      this.http.post<any>('http://3.128.249.166:8000/api/itens/', dados).subscribe((response) => {
         console.log(response);
         this.displayAddModal = false
     }
