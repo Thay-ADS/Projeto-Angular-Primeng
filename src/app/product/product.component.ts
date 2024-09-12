@@ -31,7 +31,11 @@ export class ProductComponent {
   deletarProduto(event: Event, id:number) {
     event.preventDefault();
     let url = `http://3.128.249.166:8000/api/itens/${id}/`;
-    this.http.delete<any>('http://3.128.249.166:8000/api/itens/').subscribe();
+    this.http.delete<any>(url).subscribe(
+      response => {
+        this.getProductList();
+      }
+    )
   }
 
   showAddModal(){
