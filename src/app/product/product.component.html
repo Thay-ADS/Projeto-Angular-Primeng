@@ -8,17 +8,19 @@
             
             <th>Name</th>
             <th>Description</th>
-            --
-            
+            <th>Ações</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-product>
         <tr>
             <td>
-                <a href="#" (click)="deletarProduto($event, product.id)">{{ product.name}}</a>
+                {{ product.name }}
             </td>
             <td>{{ product.description }}</td>
-            
+            <td>
+                <a href="#" (click)="deletarProduto($event, product.id)">EXCLUIR</a>
+
+            </td>
             
         </tr>
     </ng-template>

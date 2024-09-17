@@ -21,13 +21,17 @@ import {ProductModule} from './product/product.module';
 import { TableModule } from 'primeng/table';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ClientComponent } from './client/client.component';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,

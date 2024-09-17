@@ -27,10 +27,7 @@ export class AppComponent {
  
   constructor() { }
 
-  ngOnInit() {
-    
-   
-   
+  ngOnInit() {  
     this.options={
       plugins:{
         title:{
@@ -63,78 +60,34 @@ export class AppComponent {
         label :"Dashboards",
         
         items:[
-          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:""},
+          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:"/"},
           
         ]
       },
      
       {
-        label:"Produtos",
-        
+        label:"Itens", 
         items:[
           
-          {label:"Criar",routerLink:"/produtos",
+          {label:"Visualizar",routerLink:"/produtos",
           icon: "pi pi-fw pi-comment",
           
         },
-        {label:"Ler",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-        {label:"Atualizar",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-        {label:"Deletar",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-          
 
-      
         ]
-        
-
-
       },
       {
         label:"Clientes",
         
         items:[
           
-          {label:"Criar",
+          {label:"Visualizar",routerLink:"/clientes",
           icon: "pi pi-fw pi-comment",
           
         },
-        {label:"Ler",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-        {label:"Atualizar",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-        {label:"Deletar",
-          icon: "pi pi-fw pi-comment",
-          
-        },
-          
-
-      
+        
         ]
-        
-
-
       },
-        
-      
-      
-     
-    
-
-      
     ]
   }
-
-
 }
