@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { response } from 'express';
 
 @Component({
   selector: 'app-client',
@@ -14,6 +15,10 @@ export class ClientComponent {
   }
 
   getClients(){
-    return this.http.get('http://3.128.249.166:8000/api/clients/');
+    this.http.get('http://3.128.249.166:8000/api/clients/').subscribe(
+      response => {
+        return response;
+      }
+    );
   }
 }
