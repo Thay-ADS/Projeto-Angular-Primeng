@@ -8,7 +8,7 @@ import { ScrollerModule } from 'primeng/scroller';
 import { MenuModule } from 'primeng/menu';
 import {InputTextModule} from 'primeng/inputtext';
 import { DropdownModule } from 'primeng/dropdown';
-
+import {SidebarModule} from 'primeng/sidebar';
 
 import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
@@ -50,7 +50,8 @@ import { ClientComponent } from './client/client.component';
     ProductModule,
     TableModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    SidebarModule
   ],
   providers: [
     provideClientHydration()
