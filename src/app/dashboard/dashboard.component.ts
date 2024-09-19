@@ -12,7 +12,7 @@ export class DashboardComponent {
     this.basicData{
       labels:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
       datasets:[{
-        labels:'2023',
+        labels:'2022',
         data:[10,20,30,40,50,60,70,80,90,100,110,120],
         backgoundColor:["red"],
         borderColor:["black"],
