@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   basicData:any;
   basicOptions:any;
+  items:MenuItem[]|undefined;
   
+  pageSize = 10;  
+  currentpage = 2;
+  first:any;
 
 
   products: Product[];
