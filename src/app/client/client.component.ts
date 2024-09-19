@@ -9,6 +9,10 @@ import { HttpClient } from '@angular/common/http';
 export class ClientComponent {
   constructor(private http:HttpClient) { }
 
+  funcao() {
+    console.log("Veio pra cá");
+  }
+
   getClients(){
     return this.http.get('http://3.128.249.166:8000/api/clients/');
   }
