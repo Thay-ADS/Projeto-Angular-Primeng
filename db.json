@@ -1,0 +1,8 @@
+{
+    "templates":[
+        {"name":"Apollo", "price":"R$39","sales": 30},
+        {"name":"Avalon", "price":"R$39","sales": 50},
+        {"name":"Ultima", "price":"R$39","sales": 55},
+        {"name":"Poseidon", "price":"R$39","sales": 48}
+    ]
+}
