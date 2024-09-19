@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   basicData:any;
   basicOptions:any;
-  sidebarVisible=false;
-  
+
 
   ngOnInit(){
     this.basicData{
