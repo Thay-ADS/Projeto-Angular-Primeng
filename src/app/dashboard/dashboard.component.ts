@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
   basicData:any;
+  basicOptions:any;
 
   ngOnInit(){
     this.basicData{
@@ -24,10 +25,13 @@ export class DashboardComponent {
        backgoundColor:["blue"],
        borderColor:["black"],
         borderWidth:1
-     }
-                  
-                
-]
-}
-}
-}
+     }             
+    ]
+    };
+    this.basicOptions={
+      plugins:{
+        title:{
+          display:true,
+          text:"Gráfico de Receitas"
+   }
+  }
