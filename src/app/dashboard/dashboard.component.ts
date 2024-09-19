@@ -30,7 +30,7 @@ export class DashboardComponent {
             {label: 'View', icon: 'pi pi-fw pi-search', command: () => this.viewProduct(this.selectedProduct)},
                 {label: 'Delete', icon: 'pi pi-fw pi-times', command: () => this.deleteProduct(this.selectedProduct)}
         ];
-    }
+    
 
     viewProduct(product: Product) {
         this.messageService.add({severity: 'info', summary: 'Product Selected', detail: product.name });
@@ -42,10 +42,8 @@ export class DashboardComponent {
         this.selectedProduct = null;
     }
 
-}
 
 
-  ngOnInit(){
     this.basicData{
       labels:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
       datasets:[{
@@ -96,5 +94,40 @@ export class DashboardComponent {
                 ]
             }
         ];
+
+      this.items=[
+      {
+        label :"Dashboards",
+        
+        items:[
+          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:"/"},
+          
+        ]
+      },
+     
+      {
+        label:"Itens", 
+        items:[
+          
+          {label:"Visualizar",routerLink:"/produtos",
+          icon: "pi pi-fw pi-comment",
+          
+        },
+
+        ]
+      },
+      {
+        label:"Clientes",
+        
+        items:[
+          
+          {label:"Visualizar",routerLink:"/clientes",
+          icon: "pi pi-fw pi-comment",
+          
+        },
+        
+        ]
+      },
+    ]
   }
 }
