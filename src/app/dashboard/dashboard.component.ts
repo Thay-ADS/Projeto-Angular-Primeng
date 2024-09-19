@@ -110,7 +110,7 @@ export class DashboardComponent {
         items:[
           
           {label:"Visualizar",routerLink:"/produtos",
-          icon: "pi pi-fw pi-comment",
+          icon: "pi pi-fw pi-pencil",
           
         },
 
@@ -122,7 +122,7 @@ export class DashboardComponent {
         items:[
           
           {label:"Visualizar",routerLink:"/clientes",
-          icon: "pi pi-fw pi-comment",
+          icon: "pi pi-fw pi-pencil",
           
         },
         
