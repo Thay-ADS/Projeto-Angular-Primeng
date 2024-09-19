@@ -73,18 +73,13 @@ export class DashboardComponent {
     this.items = [
             {
                 label: 'File',
-                items: [{
-                        label: 'New', 
-                        icon: 'pi pi-fw pi-plus',
-                        items: [
-                            {label: 'Project'},
-                            {label: 'Other'},
-                        ]
-                    },
-                    {label: 'Open'},
-                    {label: 'Quit'}
+                icon: 'pi pi-fw pi-plus'},
+                       
+                    
+                {label: 'Open'},
+                {label: 'Quit'},
                 ]
-            },
+            
             {
                 label: 'Edit',
                 icon: 'pi pi-fw pi-pencil',
