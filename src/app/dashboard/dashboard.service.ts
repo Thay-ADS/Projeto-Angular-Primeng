@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class DashboardService {
   templates=[];
-    constructor(){
+    constructor(private http:HttpClient){
     }
 getUserList(){
   return this.http.get<any>('assets/db.json');
