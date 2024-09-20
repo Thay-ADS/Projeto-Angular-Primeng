@@ -58,7 +58,7 @@ export class DashboardComponent {
         label :"Dashboards",
         
         items:[
-          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:["/"]},
+          {label:"E-Commerce", icon: "pi pi-fw pi-home",url:"http://localhost:4200/"},
           
         ]
       },
