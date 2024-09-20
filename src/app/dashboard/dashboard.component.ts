@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DashboardService } from './dashboard.service';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-dashboard',
@@ -17,7 +18,7 @@ export class DashboardComponent {
 
 
 
-  item:any= [];
+  item:MenuItem[]= [];
 
   constructor() { }
 

@@ -11,26 +11,6 @@
 <p-chart type="bar" [data]="basicData" [options]="basicOptions" height="80vh" width="40vw"></p-chart>
 
 
-<p-contextMenu #cm [model]="items"></p-contextMenu>
 
-<div class="card">
-    <p-table [value]="products" [(contextMenuSelection)]="selectedProduct" [contextMenu]="cm" dataKey="code" [tableStyle]="{'min-width': '50rem'}">
-        <ng-template pTemplate="header">
-            <tr>
-                
-                <th>Name</th>
-                <th>Price</th>
-                <th>Sales</th>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-product>
-            <tr [pContextMenuRow]="product">
-                <td>{{product.code}}</td>
-                <td>{{product.name}}</td>
-                <td>{{product.category}}</td>
-                <td>{{product.price | currency: 'USD'}}</td>
-            </tr>
-        </ng-template>
-    </p-table>
-</div>
+
 
