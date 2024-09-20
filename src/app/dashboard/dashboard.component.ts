@@ -58,7 +58,7 @@ export class DashboardComponent {
         label :"Dashboards",
         
         items:[
-          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:"/"},
+          {label:"E-Commerce", icon: "pi pi-fw pi-home",routerLink:["/"]},
           
         ]
       },
@@ -67,7 +67,7 @@ export class DashboardComponent {
         label:"Itens", 
         items:[
           
-          {label:"Visualizar",routerLink:"/produtos",
+          {label:"Visualizar",routerLink:["/produtos"],
           icon: "pi pi-fw pi-pencil",
           
         },
@@ -79,7 +79,7 @@ export class DashboardComponent {
         
         items:[
           
-          {label:"Visualizar",routerLink:"/clientes",
+          {label:"Visualizar",routerLink:["/clientes"],
           icon: "pi pi-fw pi-pencil",
           
         },
