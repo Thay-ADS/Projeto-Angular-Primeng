@@ -13,5 +13,7 @@ export class DashboardService {
     }
 getUserList(){
   return this.http.get<any>('assets/db.json');
-  );
+  
 }
+}
+

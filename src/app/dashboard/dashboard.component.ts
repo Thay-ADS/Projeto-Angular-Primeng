@@ -15,7 +15,7 @@ export class DashboardComponent {
   pageSize = 10;  
   currentpage = 2;
   first:any;
-
+  templates:[]=[]
 
 
 
@@ -29,16 +29,16 @@ export class DashboardComponent {
     this.basicData={
       labels:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
       datasets:[{
-        labels:'2022',
+        label:'2022',
         data:[10,20,30,40,50,60,70,80,90,100,110,120],
-        backgoundColor:["red"],
+        backgroundColor:["red"],
         borderColor:["black"],
         borderWidth:1
       },
      {
-       labels:'2023',
+       label:'2023',
        data:[10,20,30,40,50,60,70,80,90,100,110,120],
-       backgoundColor:["blue"],
+       backgroundColor:["blue"],
        borderColor:["black"],
         borderWidth:1
      }             
