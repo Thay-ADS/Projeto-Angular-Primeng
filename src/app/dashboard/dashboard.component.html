@@ -25,9 +25,9 @@ styleClass="bg-white-900 shadow-2"
 <br>
    
    <h2>Tabela de usuários</h2>
-    {{this.users | json}}
+    {{this.templates | json}}
 
-  <p-table [value]="users">
+  <p-table [value]="templates">
     <ng-template pTemplate="header">
         <tr>
             <th>Name</th>
@@ -36,11 +36,11 @@ styleClass="bg-white-900 shadow-2"
           
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-users>
+    <ng-template pTemplate="body" let-templates>
         <tr>
-            <td>{{users.name}}</td>
-            <td>{{users.Price}}</td>
-            <td>{{users.Sales}}</td>
+            <td>{{templates.name}}</td>
+            <td>{{templates.Price}}</td>
+            <td>{{templates.Sales}}</td>
             
         </tr>
     </ng-template>
