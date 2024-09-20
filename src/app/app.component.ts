@@ -14,6 +14,7 @@ import { text } from 'stream/consumers';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title="ProjetoIR"
  
 
   
