@@ -30,9 +30,9 @@ styleClass="bg-white-900 shadow-2"
   <p-table [value]="templates" [paginator]="true" [rows]="5" >
     <ng-template pTemplate="header">
         <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Sales</th>
+            <th pSortableColumn="name" >Name <p-sortIcon field="name"></p-sortIcon></th>
+            <th pSortableColumn="price">Price <p-sortIcon field="price"></th>
+            <th pSortableColumn="sales">Sales <p-sortIcon field="sales"></th>
           
         </tr>
     </ng-template>
