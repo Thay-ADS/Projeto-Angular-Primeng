@@ -18,7 +18,7 @@ export class DashboardComponent {
 
 
 
-  item:MenuItem[]= [];
+
 
   constructor() { }
 
@@ -52,26 +52,7 @@ export class DashboardComponent {
    }
   }
     }
-    this.item = [
-            {
-                label: 'File',
-                icon: 'pi pi-fw pi-plus'},
-                       
-                    
-                {label: 'Open'},
-                {label: 'Quit'},
-                
-            
-              {
-                label: 'Edit',
-                icon: 'pi pi-fw pi-pencil',
-                items: [
-                    {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-                    {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-                ]
-            }
-      ]
-
+   
       this.items=[
       {
         label :"Dashboards",
