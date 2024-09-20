@@ -12,7 +12,6 @@ export class DashboardService {
     constructor(){
     }
 getUserList(){
-  return this.http.get<any>().subscribe(
-    response=>this.templates=response
+  return this.http.get<any>('assets/db.json');
   );
 }
