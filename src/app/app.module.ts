@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClientComponent } from './client/client.component';
+import { ToolbarModule } from 'primeng/toolbar';
 
 
 
@@ -52,7 +53,8 @@ import { ClientComponent } from './client/client.component';
     FormsModule,
     CommonModule,
     SidebarModule,
-    HttpClientModule 
+    HttpClientModule ,
+    ToolbarModule
   ],
   providers: [
     provideClientHydration()
