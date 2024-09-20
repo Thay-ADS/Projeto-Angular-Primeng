@@ -8,11 +8,11 @@ import { FormsModule } from '@angular/forms';
   providedIn: 'root'
 })
 export class DashboardService {
-  users=[];
+  templates=[];
     constructor(){
     }
 getUserList(){
   this.dashboardService.getUserList().subscribe(
-    response=>this.users=response
+    response=>this.templates=response
   );
 }
