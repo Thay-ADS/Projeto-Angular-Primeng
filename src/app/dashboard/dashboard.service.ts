@@ -12,7 +12,7 @@ export class DashboardService {
     constructor(){
     }
 getUserList(){
-  this.dashboardService.getUserList().subscribe(
+  return this.http.get<any>().subscribe(
     response=>this.templates=response
   );
 }
