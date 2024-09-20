@@ -48,7 +48,8 @@ export class DashboardComponent {
       plugins:{
         title:{
           display:true,
-          text:"Gráfico de Receitas"
+          text:"Gráfico de Receitas",
+          backgroundColor:["white"]
    }
   }
     }
