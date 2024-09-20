@@ -17,10 +17,10 @@
     <p-table [value]="products" [(contextMenuSelection)]="selectedProduct" [contextMenu]="cm" dataKey="code" [tableStyle]="{'min-width': '50rem'}">
         <ng-template pTemplate="header">
             <tr>
-                <th>Code</th>
+                
                 <th>Name</th>
-                <th>Category</th>
                 <th>Price</th>
+                <th>Sales</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-product>

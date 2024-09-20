@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DashboardService } from './dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,36 +16,16 @@ export class DashboardComponent {
   first:any;
 
 
-  products: Product[];
 
-  selectedProduct: Product;
+  item:any= [];
 
-  items: MenuItem[];
-
-  constructor(private productService: ProductService, private messageService: MessageService) { }
+  constructor() { }
 
     ngOnInit() {
-        this.productService.getProductsSmall().then(data => this.products = data);
-
-        this.items = [
-            {label: 'View', icon: 'pi pi-fw pi-search', command: () => this.viewProduct(this.selectedProduct)},
-                {label: 'Delete', icon: 'pi pi-fw pi-times', command: () => this.deleteProduct(this.selectedProduct)}
-        ];
-    
-
-    viewProduct(product: Product) {
-        this.messageService.add({severity: 'info', summary: 'Product Selected', detail: product.name });
-    }
-
-    deleteProduct(product: Product) {
-        this.products = this.products.filter((p) => p.id !== product.id);
-        this.messageService.add({severity: 'info', summary: 'Product Deleted', detail: product.name});
-        this.selectedProduct = null;
-    }
+     
 
 
-
-    this.basicData{
+    this.basicData={
       labels:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
       datasets:[{
         labels:'2022',
@@ -70,7 +51,7 @@ export class DashboardComponent {
    }
   }
     }
-    this.items = [
+    this.item = [
             {
                 label: 'File',
                 icon: 'pi pi-fw pi-plus'},
@@ -78,9 +59,9 @@ export class DashboardComponent {
                     
                 {label: 'Open'},
                 {label: 'Quit'},
-                ]
+                
             
-            {
+              {
                 label: 'Edit',
                 icon: 'pi pi-fw pi-pencil',
                 items: [
@@ -88,7 +69,7 @@ export class DashboardComponent {
                     {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
                 ]
             }
-        ];
+      ]
 
       this.items=[
       {
